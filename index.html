@@ -1,0 +1,360 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ITF — 아이디어의 시작부터, 당신과 함께하는 개발팀</title>
+<meta name="description" content="기획부터 운영까지, 필요한 만큼 꾸려지는 TF. 3분 AI 견적으로 예상 개발비를 확인하세요.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.itf *{box-sizing:border-box;margin:0;padding:0}
+.itf .w{width:1200px;margin:0 auto}
+.itf .sec{padding:112px 0;position:relative}
+.itf .tag{position:absolute;left:24px;top:24px;font-size:12px;color:#8B919C;background:#F4F6F9;border:1px dashed #C5CAD3;padding:4px 10px;border-radius:999px}
+.itf .dark .tag{background:#14264F;border-color:#3A4E7A;color:#C7D0E0}
+.itf .eb{font-size:14px;font-weight:700;color:#2563EB;letter-spacing:1px}
+.itf h2{font-size:40px;font-weight:900;letter-spacing:-1px;line-height:1.35;margin-top:12px}
+.itf .sub{font-size:17px;color:#5F6673;margin-top:12px;line-height:1.7}
+.itf .btn{display:inline-flex;align-items:center;height:56px;padding:0 28px;border-radius:999px;font-size:16px;font-weight:700;text-decoration:none}
+.itf .p{background:#2563EB;color:#fff}
+.itf .s{border:1px solid #C5CAD3;color:#111318;background:#fff}
+.itf .ph{background:#E6E9EE;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#8B919C;font-size:14px}
+.itf .card{background:#fff;border:1px solid #E6E9EE;border-radius:20px;padding:28px}
+.itf .chip{display:inline-block;font-size:13px;font-weight:700;padding:6px 12px;border-radius:999px;background:#EAF1FF;color:#2563EB}
+.itf .g{color:#5F6673}
+.itf .dark{background:#0B1A3C;color:#fff}
+.itf .sv-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:300px;gap:20px}
+.itf .sv-t{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0!important}
+.itf .sv-c{position:relative;overflow:hidden;background:#F4F6FA;border-radius:24px;padding:32px;display:flex;flex-direction:column;align-items:flex-start;box-shadow:0 1px 0 #E6E9EE,0 12px 30px rgba(15,23,42,.04)}
+.itf .sv-c::after{content:"";position:absolute;right:-50px;top:-50px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.10),transparent 70%)}
+.itf .sv-pl{white-space:nowrap;background:#2563EB;color:#fff;font-size:13px;font-weight:700;padding:7px 14px;border-radius:20px}
+.itf .sv-c b{font-size:26px;margin-top:20px;letter-spacing:-.5px}
+.itf .sv-ks{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px;max-width:270px;position:relative;z-index:1}
+.itf .sv-ks span{font-size:13px;color:#475569;background:#F1F5F9;padding:6px 12px;border-radius:8px}
+.itf .sv-n{position:absolute;right:20px;bottom:-26px;font-size:120px;font-weight:900;color:#2563EB;opacity:.07;letter-spacing:-4px;line-height:1.2}
+.itf .sv-hl{background:linear-gradient(140deg,#2563EB,#1D4ED8 55%,#173A8C);color:#fff;box-shadow:0 18px 40px rgba(37,99,235,.3)}
+.itf .sv-hl::after{background:radial-gradient(circle,rgba(255,255,255,.25),transparent 70%)}
+.itf .sv-hl .sv-n{color:#fff;opacity:.12}
+.itf .sv-hl .sv-pl{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35)}
+.itf .pf-c{position:relative;background:#fff;border-radius:16px;padding:76px 28px 22px;display:flex;flex-direction:column;align-items:center}
+.itf .pf-r{position:absolute;top:0;right:22px;width:50px;height:56px;background:#0F172A;color:#fff;font-size:11px;font-weight:700;text-align:center;padding-top:12px;letter-spacing:-.3px;clip-path:polygon(0 0,100% 0,100% 100%,50% 80%,0 100%)}
+.itf .pf-b2{width:100%;margin-top:40px;text-align:left}.itf .pf-b2 b{display:block;font-size:16px;letter-spacing:-.3px}.itf .pf-b2 span{display:block;font-size:13px;color:#8B919C;margin-top:6px}
+.itf .pf-b{width:100%;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-top:44px}
+.itf .pf-b p{font-size:14px;line-height:1.6;font-weight:500}
+.itf .pf-b span{font-size:12px;color:#8B919C;white-space:nowrap}
+.itf .wy-st{position:relative;height:440px;margin-top:56px;overflow:hidden}
+.itf .wy-c{position:absolute;left:50%;top:20px;width:400px;height:380px;background:#F4F6FA;border-radius:28px;padding:44px 40px;display:flex;flex-direction:column;align-items:flex-start;overflow:hidden;text-align:left}
+.itf .wy-c>*{opacity:var(--o)}
+.itf .wy-on{background:#fff;box-shadow:0 0 0 1px #E6E9EE,0 24px 60px rgba(15,23,42,.10)}
+.itf .wy-pl{white-space:nowrap;background:#EAF1FF;color:#2563EB;font-size:13px;font-weight:700;padding:8px 14px;border-radius:20px}
+.itf .wy-on .wy-pl{background:#2563EB;color:#fff}
+.itf .wy-c b{font-size:28px;line-height:1.4;letter-spacing:-.6px;margin-top:24px;position:relative}
+.itf .wy-c p{font-size:15px;color:#5F6673;line-height:1.7;margin-top:auto}
+.itf .wy-n{position:absolute;right:24px;top:8px;font-size:110px;font-weight:900;color:#2563EB;opacity:.06!important;letter-spacing:-4px;line-height:1.2}
+.itf .wy-ar{position:absolute;top:50%;width:56px;height:56px;margin-top:-28px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #E6E9EE,0 8px 20px rgba(15,23,42,.08);display:flex;align-items:center;justify-content:center;z-index:20;font-size:24px;color:#111318;text-decoration:none}
+.itf .wy-pg{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:28px;font-size:14px;color:#8B919C;font-weight:700}
+.itf .wy-bar{width:200px;height:3px;background:#E6E9EE;border-radius:2px;position:relative}
+.itf .wy-bar i{position:absolute;left:66px;width:34px;height:3px;background:#2563EB;border-radius:2px}
+.itf .hw-c{background:#fff;border-radius:28px;padding:48px;display:flex;flex-direction:column;align-items:flex-start;box-shadow:0 1px 0 #E6E9EE,0 12px 30px rgba(15,23,42,.04)}
+.itf .hw-pl{background:#EAF1FF;color:#2563EB;font-size:13px;font-weight:700;padding:8px 14px;border-radius:20px}
+.itf .hw-c h3{font-size:30px;font-weight:900;letter-spacing:-.8px;margin-top:20px}
+.itf .hw-one{font-size:16px;color:#5F6673;margin-top:12px;line-height:1.7}
+.itf .hw-lb2{font-size:13px;font-weight:700;color:#8B919C;margin-top:32px;padding-top:24px;border-top:1px solid #E6E9EE;width:100%}
+.itf .hw-ul{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:12px;margin-bottom:40px}
+.itf .hw-ul li{display:flex;gap:10px;align-items:center;font-size:16px;color:#111318}
+.itf .hw-ul svg{flex:none}
+.itf .hw-rs{width:100%;margin-top:32px;border-top:1px solid #E6E9EE}
+.itf .hw-r{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid #E6E9EE;font-size:15px;line-height:1.6}
+.itf .hw-r span{color:#8B919C;font-weight:500}.itf .hw-r b{font-weight:500;color:#111318}
+.itf .hw-ft{width:100%;display:flex;justify-content:space-between;align-items:flex-end;margin-top:auto;padding-top:36px}
+.itf .hw-lb{display:block;font-size:13px;color:#8B919C}.itf .hw-pr{display:block;font-size:26px;font-weight:900;color:#2563EB;margin-top:4px;letter-spacing:-.5px}.itf .hw-pr small{font-size:15px;color:#5F6673;font-weight:500}
+.itf .hw-nt{margin-top:20px;background:#fff;border-radius:20px;padding:24px 32px;display:flex;justify-content:space-between;align-items:center;font-size:15px}
+.itf .pr{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;margin-top:64px}
+.itf .pr-ln{position:absolute;left:20px;right:0;top:19px;height:2px;background:linear-gradient(90deg,#2563EB,#9DB8FF)}
+.itf .pr-s{position:relative}
+.itf .pr-dot{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#2563EB;color:#fff;font-size:13px;font-weight:700;box-shadow:0 0 0 6px #fff,0 0 0 7px #DCE6FF}
+.itf .pr-k{font-size:12px;font-weight:700;color:#8B919C;letter-spacing:1px;margin-top:28px}
+.itf .pr-s b{display:block;font-size:20px;font-weight:900;letter-spacing:-.5px;margin-top:6px}
+.itf .pr-s p{word-break:keep-all;font-size:15px;color:#5F6673;line-height:1.7;margin-top:12px}
+.itf .pr-ch{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
+.itf .pr-ch span{font-size:12px;font-weight:500;color:#111318;background:#F4F6F9;border:1px solid #E6E9EE;padding:5px 10px;border-radius:6px}
+.itf .fq{border-top:1px solid #E6E9EE}
+.itf .fq-i{border-bottom:1px solid #E6E9EE;padding:26px 4px}
+.itf .fq-q{display:flex;align-items:center;gap:20px}
+.itf .fq-n{font-size:13px;font-weight:700;color:#8B919C;width:20px}
+.itf .fq-q b{flex:1;font-size:18px;letter-spacing:-.3px}
+.itf .fq-b{width:32px;height:32px;border-radius:50%;background:#fff;border:1px solid #E6E9EE;display:flex;align-items:center;justify-content:center;font-size:18px;color:#5F6673}
+.itf .fq-on{background:#2563EB;border-color:#2563EB;color:#fff}
+.itf .fq-a{font-size:15px;color:#5F6673;line-height:1.75;margin:14px 60px 0 40px;word-break:keep-all}
+a{color:#2563EB}a:hover{color:#1D4ED8}
+
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{background:#fff;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.itf{overflow-x:hidden}
+.itf .w{width:auto;max-width:1200px;margin:0 auto;padding:0 20px;box-sizing:content-box}
+.itf a{transition:color .2s,background .2s,transform .2s,box-shadow .2s,border-color .2s}
+.itf button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.logo{font-size:26px;font-weight:900;color:#fff!important;letter-spacing:-1px;text-decoration:none}
+.gnb-nav{display:flex;gap:36px;font-size:15px}
+.gnb-nav a{color:#C7D0E0;text-decoration:none}.gnb-nav a:hover{color:#fff}
+.burger{display:none;width:40px;height:40px;flex-direction:column;justify-content:center;gap:5px;padding:0 9px}
+.burger i{display:block;height:2px;background:#fff;border-radius:2px}
+/* buttons */
+.itf .btn.p:hover{background:#1D4ED8;transform:translateY(-2px);box-shadow:0 10px 24px rgba(37,99,235,.35)}
+.itf .btn[style*="border:1px solid #3A4E7A"]:hover{border-color:#9DB8FF!important;background:rgba(157,184,255,.08)}
+.itf .btn[style*="#0F172A"]:hover{background:#2563EB!important;transform:translateY(-2px)}
+.itf a[style*="font-weight:700"]:not(.btn):hover{color:#1D4ED8;text-decoration:underline!important;text-underline-offset:4px}
+/* hero visual */
+.hv-wrap{margin-top:56px;position:relative}
+.hv{transform-origin:top left}
+.hv>div{transition:transform .4s ease}
+.hv>div[style*="rotate"]:hover{filter:brightness(1.08)}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -8px}}
+.hv>div[style*="border-radius:50%;background:radial-gradient(circle at"]{animation:float 4s ease-in-out infinite}
+/* services hover */
+.itf .sv-c{transition:background .3s,box-shadow .3s,transform .3s;cursor:pointer}
+.itf .sv-c:hover{background:linear-gradient(140deg,#2563EB,#1D4ED8 55%,#173A8C);color:#fff;transform:translateY(-4px);box-shadow:0 18px 40px rgba(37,99,235,.3)}
+.itf .sv-c:hover .sv-pl{background:rgba(255,255,255,.18)}
+.itf .sv-c:hover .sv-ks span{background:rgba(255,255,255,.14);color:#fff}
+.itf .sv-c:hover p{color:#DCE6FF!important}
+.itf .sv-c:hover a{background:#fff!important}
+/* portfolio */
+.pf-wrap{display:grid;grid-template-columns:300px minmax(0,1fr);gap:40px}
+.pf-wrap>div:first-child{align-items:center!important;justify-content:center;text-align:center}
+.pf-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.itf .pf-c{transition:transform .3s,box-shadow .3s;cursor:pointer;overflow:hidden}
+.itf .pf-c img{transition:transform .5s}
+.itf .pf-c:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(15,23,42,.10)}
+.itf .pf-c:hover img{transform:scale(1.04)}
+.itf .pf-c:hover .pf-r{background:#2563EB}
+/* why carousel */
+.itf .wy-c{transition:transform .5s cubic-bezier(.2,.7,.2,1),background .3s,box-shadow .3s}
+.itf .wy-c>*{transition:opacity .4s}
+.itf .wy-ar{cursor:pointer}.itf .wy-ar:hover{background:#2563EB;color:#fff;box-shadow:0 10px 24px rgba(37,99,235,.35)}
+.itf .wy-bar i{transition:left .4s}
+/* how */
+.itf .hw-c{align-items:center!important;text-align:center}
+.itf .hw-c .hw-ul{align-self:center;text-align:left}
+.hw-g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:56px}
+.itf .hw-c{transition:transform .3s,box-shadow .3s}.itf .hw-c:hover{transform:translateY(-4px);box-shadow:0 0 0 2px #2563EB,0 18px 40px rgba(15,23,42,.08)}
+/* process */
+.pr-hd{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.pr-hd .sub{text-align:center!important;margin:0!important}
+.itf .pr-s:hover .pr-dot{background:#1D4ED8;transform:scale(1.1)}.itf .pr-dot{transition:transform .25s,background .25s}
+/* faq */
+.fq-wrap{display:flex!important;flex-direction:column;align-items:center;text-align:center}
+.fq-wrap>div:first-child{display:contents!important}
+.fq-wrap .fq{order:2;width:100%;max-width:880px;margin-top:48px;text-align:left}
+.fq-wrap>div:first-child>div[style*="margin-top:auto"]{order:3;margin-top:48px!important}
+.fq-wrap>div:first-child>div[style*="margin-top:auto"]>div{flex-direction:column;align-items:stretch!important;gap:10px!important;width:320px;max-width:100%;margin-left:auto;margin-right:auto}
+.fq-wrap>div:first-child>div[style*="margin-top:auto"]>div>a{justify-content:center;width:100%;height:52px!important}
+.itf .fq-q{width:100%;text-align:left}
+.itf .fq-q:hover b{color:#2563EB}
+.itf .fq-q:hover .fq-b{border-color:#2563EB;color:#2563EB}
+.itf .fq-b{transition:all .25s;flex:none}
+.itf .fq-a{margin:0!important;display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s}
+.itf .fq-a>p{overflow:hidden;font-size:15px;color:#5F6673;line-height:1.75;margin:0 60px 0 40px;word-break:keep-all}
+.itf .fq-i.open .fq-a{grid-template-rows:1fr}.itf .fq-i.open .fq-a>p{margin-top:14px}
+.itf .fq-i.open .fq-n{color:#2563EB}
+.itf .fq-i.open .fq-b{background:#2563EB;border-color:#2563EB;color:#fff;transform:rotate(45deg)}
+.ft{display:flex;justify-content:space-between;font-size:13px;color:#5F6673;gap:12px;flex-wrap:wrap}
+/* toast + mobile cta */
+.toast{position:fixed;left:50%;bottom:32px;transform:translate(-50%,20px);background:#111318;color:#fff;padding:14px 22px;border-radius:999px;font:500 14px 'Noto Sans KR',sans-serif;opacity:0;pointer-events:none;transition:all .3s;z-index:50;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.m-cta{display:none}
+.itf .sv-ks span,.itf .sv-c a{background:#fff!important;border:1px solid #2563EB;color:#2563EB!important}
+.itf .sv-c:hover .sv-ks span{background:rgba(255,255,255,.14)!important;border-color:rgba(255,255,255,.6);color:#fff!important}
+.itf .sv-c:hover a{border-color:#fff}
+.itf .fq-more:hover{background:#EAF1FF!important;transform:translateY(-2px)}
+.cta .w{text-align:center}.cta .w>div[style*="display:flex"]{flex-direction:column;align-items:stretch;gap:10px!important;width:320px;max-width:100%;margin-left:auto;margin-right:auto}
+.cta .w>div[style*="display:flex"]>a{justify-content:center;width:100%;flex:none!important}
+.cta{padding:180px 0 300px!important}
+.cta .cta-vis{right:auto!important;left:50%;margin-left:-280px;top:auto!important;bottom:-90px;margin-top:0!important;opacity:.3!important;transform:scale(.48)!important}
+:focus-visible{outline:3px solid #9DB8FF;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* ---------- tablet ---------- */
+@media (max-width:1100px){
+  .itf .sv-g{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .itf .sv-t{grid-column:1/-1;order:-1;padding:0 0 12px!important}
+  .itf .sv-t .btn{margin-top:24px!important}
+  .pf-wrap,.fq-wrap{grid-template-columns:1fr}
+  .itf .pr{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:48px}.itf .pr-ln{display:none}
+  .cta-vis{right:-60px!important;opacity:.35!important}
+}
+/* ---------- mobile ---------- */
+@media (max-width:768px){
+  .itf .sec{padding:72px 0}
+  .itf h2{font-size:26px!important;line-height:1.4}
+  .itf .sub{font-size:15px!important}
+  .itf .btn{height:50px;padding:0 22px;font-size:15px}
+  .gnb{height:60px!important}
+  .gnb-nav{position:absolute;top:60px;left:0;right:0;flex-direction:column;gap:0;background:#0B1A3C;border-bottom:1px solid rgba(157,184,255,.14);padding:8px 20px 20px;display:none}
+  .gnb-nav a{padding:14px 0;font-size:17px;border-bottom:1px solid rgba(157,184,255,.1)}
+  .menu-open .gnb-nav{display:flex}
+  .gnb-btns{display:none!important}
+  .burger{display:flex}
+  .itf .h1{font-size:34px!important;white-space:normal!important;letter-spacing:-1px!important}
+  .itf .h1 + p{font-size:16px!important}
+  .itf .h1 + p br{display:none}
+  .hv-wrap{margin-top:36px}
+  .itf .sv-g{grid-template-columns:1fr;grid-auto-rows:auto!important}
+  .itf .sv-c{min-height:220px}
+  .pf-g{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .itf .pf-c{padding:56px 14px 16px!important}.itf .pf-c img{height:110px!important}
+  .itf .pf-b2{margin-top:20px!important}.itf .pf-b2 b{font-size:14px}.itf .pf-b2 span{font-size:12px}
+  .itf .wy-st{height:400px}
+  .itf .wy-c{width:calc(100vw - 72px)!important;height:340px!important;padding:32px 28px!important}
+  .itf .wy-c b{font-size:23px}
+  .itf .wy-ar{display:none}
+  .hw-g{grid-template-columns:1fr;margin-top:40px}
+  .itf .hw-c{padding:32px 24px}
+  .itf .hw-nt{flex-direction:column;align-items:flex-start;gap:12px}
+  .itf .hw-nt span[style*="margin-left"]{display:block;margin:6px 0 0!important}
+  .pr-hd{flex-direction:column;align-items:flex-start;gap:12px}
+  .pr-hd .sub{text-align:left!important}
+  .itf .pr{grid-template-columns:1fr;gap:0;margin-top:40px}
+  .itf .pr-s{position:relative;padding:0 0 36px 64px}
+  .itf .pr-s::before{content:"";position:absolute;left:19px;top:40px;bottom:0;width:2px;background:#DCE6FF}
+  .itf .pr-s:last-child::before{display:none}
+  .itf .pr-dot{position:absolute!important;left:0;top:0}
+  .itf .pr-k{margin-top:8px}
+  .fq-wrap{display:flex;flex-direction:column;gap:0}
+  .fq-wrap>div:first-child{display:contents!important}
+  .fq-wrap .fq{order:2;margin-top:28px}
+  .fq-wrap>div:first-child>div[style*="margin-top:auto"]{order:3;margin-top:40px!important}
+  .itf .fq-q b{font-size:16px}.itf .fq-a>p{margin:0 0 0 40px}
+  .cta{padding:80px 0 120px!important}
+  .itf .cta{padding:110px 0 230px!important}
+  .cta .cta-vis{transform:scale(.36)!important;opacity:.3!important;bottom:-150px}
+  .cta .w>p{font-size:min(16px,3.5vw)!important;white-space:nowrap}
+  .cta .btn{flex:1;justify-content:center}
+  .m-cta{display:flex;position:fixed;left:16px;right:16px;bottom:16px;height:54px;border-radius:999px;background:#2563EB;color:#fff;font:700 16px 'Noto Sans KR',sans-serif;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 10px 30px rgba(37,99,235,.45);z-index:40;transition:transform .3s}
+  .m-cta.hide{transform:translateY(120px)}
+  .toast{bottom:84px}
+  .ft{flex-direction:column}
+  footer{padding-bottom:100px!important}
+}
+</style></head><body><div class="itf" style="font-family: 'Noto Sans KR', sans-serif; color: #111318; background: #ffffff">
+
+<div class="dark" style="position:relative;overflow:hidden;background:radial-gradient(1000px 600px at 50% 85%,#173A8C 0%,#0B1A3C 62%)">
+<header id="top" class="gnb" style="position:relative;z-index:2;height:76px;border-bottom:1px solid rgba(157,184,255,.14)"><div class="w" style="height:100%;display:flex;align-items:center;justify-content:space-between">
+<a href="#top" class="logo" aria-label="ITF 홈">ITF</a>
+<nav class="gnb-nav"><a href="#service">서비스</a><a href="#how">비용</a><a href="#process">진행 방식</a><a href="#portfolio">포트폴리오</a><a href="#faq">FAQ</a></nav>
+<button class="burger" aria-label="메뉴 열기" onclick="document.body.classList.toggle('menu-open')"><i></i><i></i><i></i></button><div class="gnb-btns" style="display:flex;gap:10px"><a href="#" data-to="무료 상담 신청 페이지" class="btn" style="height:42px;font-size:14px;padding:0 18px;border:1px solid #3A4E7A;color:#fff">무료 상담</a><a href="#" data-to="3분 AI 견적 페이지" class="btn p" style="height:42px;font-size:14px;padding:0 18px">3분 AI 견적</a></div></div></header>
+
+<section class="sec" style="padding:84px 0 40px">
+<div class="w" style="position:relative">
+<div style="text-align:center">
+<h1 class="h1" style="font-size:56px;font-weight:900;letter-spacing:-1.5px;line-height:1.3;white-space:nowrap">아이디어의 시작부터,<br>당신과 함께하는 <span style="color:#9DB8FF">개발팀.</span></h1>
+<p style="font-size:19px;color:#C7D0E0;margin-top:28px;line-height:1.75">개발자를 뽑기엔 이르고, 혼자 하기엔 막막할 때. <br>기획부터 운영까지, 필요한 만큼 꾸려지는 TF가 있어요.</p>
+<div style="display:flex;gap:12px;margin-top:44px;justify-content:center"><a href="#" data-to="3분 AI 견적 페이지" class="btn p">3분 AI 견적 받기 →</a><a href="#" data-to="무료 상담 신청 페이지" class="btn" style="border:1px solid #3A4E7A;color:#fff">무료 상담</a></div>
+<p style="font-size:14px;color:#9DB8FF;margin-top:16px">3분이면 예상 개발비를 알 수 있어요</p></div>
+
+<div class="hv-wrap"><div class="hv" aria-hidden="true" style="position:relative;width:1200px;height:300px;perspective:1400px">
+ <div style="position:absolute;left:600px;top:170px;width:700px;height:700px;margin:-350px 0 0 -350px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,.5) 0%,rgba(37,99,235,.16) 40%,transparent 70%);filter:blur(10px)"></div>
+ <div style="position:absolute;left:300px;top:150px;width:600px;height:600px;transform:rotateX(72deg);border-radius:50%;border:1px solid rgba(157,184,255,.3);background:radial-gradient(circle,rgba(157,184,255,.12),transparent 65%)"></div>
+
+ <div style="position:absolute;left:520px;top:40px;width:170px;height:170px;transform:rotateX(16deg) rotateY(-8deg);border-radius:37px;background:linear-gradient(145deg,#5B8CF5 0%,#2563EB 45%,#1D4ED8 100%);box-shadow:inset 0 2px 0 rgba(255,255,255,.45),inset 0 -10px 24px rgba(11,26,60,.35),7px 9px 0 #1E40AF,12px 16px 0 #1A3790,22px 34px 60px rgba(3,10,30,.65);display:flex;align-items:center;justify-content:center"><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M13.5 5l-3 14"></path></svg></div>
+
+ <div style="position:absolute;left:300px;top:80px;width:128px;height:128px;transform:rotateX(14deg) rotateY(28deg) rotateZ(-8deg);border-radius:28px;background:linear-gradient(150deg,#E8EEFF 0%,#B9CCFF 100%);box-shadow:inset 0 2px 0 #fff,-7px 9px 0 #8EA9F0,-24px 32px 56px rgba(3,10,30,.6);display:flex;align-items:center;justify-content:center"><div style="width:76px">
+  <div style="display:flex;align-items:center;gap:7px"><span style="width:22px;height:22px;border-radius:7px;background:#2563EB;display:flex;align-items:center;justify-content:center;flex:none"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5"><path d="M20 6 9 17l-5-5"></path></svg></span><span style="height:7px;flex:1;border-radius:4px;background:#2563EB;opacity:.55"></span></div>
+  <div style="display:flex;align-items:center;gap:7px;margin-top:9px"><span style="width:22px;height:22px;border-radius:7px;background:#2563EB;display:flex;align-items:center;justify-content:center;flex:none"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5"><path d="M20 6 9 17l-5-5"></path></svg></span><span style="height:7px;flex:1;border-radius:4px;background:#2563EB;opacity:.4"></span></div>
+  <div style="display:flex;align-items:center;gap:7px;margin-top:9px"><span style="width:22px;height:22px;border-radius:7px;border:2px solid #5B8CF5;flex:none"></span><span style="height:7px;width:60%;border-radius:4px;background:#2563EB;opacity:.28"></span></div></div></div>
+
+ <div style="position:absolute;left:130px;top:150px;width:96px;height:96px;transform:rotateX(18deg) rotateY(30deg) rotateZ(-12deg);border-radius:21px;background:linear-gradient(145deg,#5B8CF5 0%,#2563EB 45%,#1D4ED8 100%);box-shadow:inset 0 2px 0 rgba(255,255,255,.45),inset 0 -10px 24px rgba(11,26,60,.35),-7px 9px 0 #1E40AF,-12px 16px 0 #1A3790,-22px 34px 60px rgba(3,10,30,.65);display:flex;align-items:center;justify-content:center"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+
+ <div style="position:absolute;left:780px;top:80px;width:128px;height:128px;transform:rotateX(14deg) rotateY(-28deg) rotateZ(8deg);border-radius:28px;background:linear-gradient(150deg,#E8EEFF 0%,#B9CCFF 100%);box-shadow:inset 0 2px 0 #fff,7px 9px 0 #8EA9F0,24px 32px 56px rgba(3,10,30,.6);display:flex;align-items:center;justify-content:center"><svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"></path><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="m2 2 7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg></div>
+
+ <div style="position:absolute;left:990px;top:150px;width:96px;height:96px;transform:rotateX(18deg) rotateY(-30deg) rotateZ(12deg);border-radius:21px;background:linear-gradient(145deg,#5B8CF5 0%,#2563EB 45%,#1D4ED8 100%);box-shadow:inset 0 2px 0 rgba(255,255,255,.45),inset 0 -10px 24px rgba(11,26,60,.35),7px 9px 0 #1E40AF,12px 16px 0 #1A3790,22px 34px 60px rgba(3,10,30,.65);display:flex;align-items:center;justify-content:center"><span style="color:#fff;font-weight:900;font-size:30px">TF</span></div>
+
+ <div style="position:absolute;left:470px;top:30px;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#fff 0%,#9DB8FF 40%,#2563EB 100%);box-shadow:0 10px 22px rgba(3,10,30,.55)"></div>
+ <div style="position:absolute;left:740px;top:20px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#fff 0%,#9DB8FF 40%,#2563EB 100%);box-shadow:0 10px 22px rgba(3,10,30,.55)"></div>
+ <div style="position:absolute;left:20px;top:110px;width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#fff 0%,#9DB8FF 40%,#2563EB 100%);box-shadow:0 10px 22px rgba(3,10,30,.55)"></div>
+ <div style="position:absolute;left:1110px;top:70px;width:20px;height:20px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#fff 0%,#9DB8FF 40%,#2563EB 100%);box-shadow:0 10px 22px rgba(3,10,30,.55)"></div>
+</div></div></div></section></div>
+
+<section class="sec" id="service"><div class="w">
+<div class="sv-g"><div class="sv-c"><span class="sv-pl">iOS · Android 앱 개발</span><b>모바일 앱</b><div class="sv-ks"><span>커머스</span><span>배달</span><span>예약</span><span>커뮤니티</span><span>멤버십</span></div></div><div class="sv-c"><span class="sv-pl">웹사이트 · 웹 서비스 · 플랫폼</span><b>웹 · 플랫폼</b><div class="sv-ks"><span>B2B 플랫폼</span><span>관리자 시스템</span><span>마켓플레이스</span><span>콘텐츠 사이트</span></div></div><div class="sv-t" style="padding:0 0 0 20px"><h2 style="font-size:33px">내 아이디어는<br>어떤 서비스가 될까요?</h2><p class="sub" style="font-size:16px">만들고 싶은 서비스와 가까운 유형을<br>골라보세요. 아직 정해지지 않았어도 괜찮아요.</p><a href="#" data-to="서비스 상세 페이지" class="btn" style="margin-top:auto;background:#0F172A;color:#fff">서비스 자세히 보기 →</a></div><div class="sv-c"><span class="sv-pl">AI를 활용한 기능 개발</span><b>AI 기능 · 자동화</b><div class="sv-ks"><span>AI 챗봇</span><span>문서 분석</span><span>이미지 인식</span><span>추천</span><span>업무 자동화</span></div></div><div class="sv-c"><span class="sv-pl">추가 기능 개발 및 개선</span><b>기존 서비스 고도화</b><div class="sv-ks"><span>기능 추가</span><span>성능 개선</span><span>리뉴얼</span><span>운영 효율화</span></div></div><div class="sv-c"><span class="sv-pl">전문가와 함께 정리하고 싶어요</span><b>잘 모르겠어요</b><p style="color:#5F6673;font-size:15px;line-height:1.7;margin-top:12px">아직 구체화되지 않은 아이디어도<br>상담을 통해 함께 정리할 수 있어요.</p><a href="#" data-to="무료 상담 신청 페이지" style="margin-top:auto;background:#EAF1FF;color:#1D4ED8;font-weight:700;font-size:14px;padding:12px 18px;border-radius:24px;text-decoration:none;position:relative;z-index:1">무료 상담 신청 →</a></div></div></div></section>
+
+<section class="sec" id="portfolio" style="background:#F4F6F9"><div class="w pf-wrap">
+<div style="display:flex;flex-direction:column;align-items:flex-start"><div class="eb">PORTFOLIO</div><h2 style="font-size:33px">아이디어가<br>서비스가 되기까지</h2><p class="sub" style="font-size:16px">기획부터 출시까지,<br>100건 이상의 서비스를 함께 만들었어요.</p><a href="#" data-to="포트폴리오 목록 페이지" class="btn" style="margin-top:36px;background:#0F172A;color:#fff">포트폴리오 더보기 →</a></div>
+<div class="pf-g"><div class="pf-c"><span class="pf-r">커머스</span><img src="img/pf1.png" alt="액세서리 쇼핑몰 앱" style="width:100%;height:150px;object-fit:cover;border-radius:6px;display:block"><div class="pf-b2"><b>액세서리 쇼핑몰 앱</b><span>고객 앱 · 웹 쇼핑몰 · 관리자 개발</span></div></div><div class="pf-c"><span class="pf-r">랭킹</span><img src="img/pf2.png" alt="맛집 주간 랭킹 플랫폼" style="width:100%;height:150px;object-fit:cover;border-radius:6px;display:block"><div class="pf-b2"><b>맛집 주간 랭킹 플랫폼</b><span>이용자 웹 · 앱과 업주 센터 · 운영자 관리자</span></div></div><div class="pf-c"><span class="pf-r">에너지</span><img src="img/pf3.png" alt="발전 설비 예측경보 시스템" style="width:100%;height:150px;object-fit:cover;border-radius:6px;display:block"><div class="pf-b2"><b>발전 설비 예측경보 시스템</b><span>학습 · 추론 서버 등</span></div></div><div class="pf-c"><span class="pf-r">예약결제</span><img src="img/pf4.png" alt="시간 단위 예약 · 해외 결제 플랫폼" style="width:100%;height:150px;object-fit:cover;border-radius:6px;display:block"><div class="pf-b2"><b>시간 단위 예약 · 해외 결제 플랫폼</b><span>예약 엔진, 권한 3종, 해외 결제와 환불 등</span></div></div><div class="pf-c"><span class="pf-r">게임</span><img src="img/pf5.png" alt="골드에이지" style="width:100%;height:150px;object-fit:cover;border-radius:6px;display:block"><div class="pf-b2"><b>골드에이지</b><span>전략 시뮬레이션 게임</span></div></div><div class="pf-c"><span class="pf-r">임베디드</span><img src="img/pf6.png" alt="수소보트 조타실 · 선외기 조명" style="width:100%;height:150px;object-fit:cover;border-radius:6px;display:block"><div class="pf-b2"><b>수소보트 조타실 · 선외기 조명</b><span>해양 모빌리티 기업과 시제기를 제조</span></div></div></div></div></section>
+
+<section class="sec" id="why" style="padding-bottom:96px"><div class="w" style="text-align:center">
+<div class="eb">WHY ITF</div><h2>개발을 몰라도,<br>믿고 맡길 수 있도록</h2><p class="sub">믿어 달라는 말 대신, 직접 확인할 수 있는 방식으로 일합니다.</p></div>
+<div class="wy-st"><div class="wy-c" style="transform:translateX(calc(-50% + -830px)) scale(0.86);--o:0.4;z-index:8"><span class="wy-pl">3분 AI 견적</span><b>상담 전에 예산을<br>먼저 가늠합니다</b><p>몇 가지 질문에 답하면 예상 개발비를<br>바로 확인할 수 있습니다.</p><span class="wy-n">01</span></div><div class="wy-c" style="transform:translateX(calc(-50% + -430px)) scale(0.92);--o:0.6;z-index:9"><span class="wy-pl">비용 사전 합의</span><b>동의 없이 비용이<br>늘어나지 않습니다</b><p>범위나 비용이 바뀌면 먼저 설명하고,<br>합의한 뒤에만 진행합니다.</p><span class="wy-n">02</span></div><div class="wy-c wy-on" style="transform:translateX(calc(-50% + 0px)) scale(1);--o:1;z-index:10"><span class="wy-pl">매주 작동하는 화면 공유</span><b>말이 아닌 결과물로<br>진행을 확인합니다</b><p>매주 실제로 작동하는 화면을<br>직접 눌러 보며 확인할 수 있습니다.</p><span class="wy-n">03</span></div><div class="wy-c" style="transform:translateX(calc(-50% + 430px)) scale(0.92);--o:0.6;z-index:9"><span class="wy-pl">프로젝트 관리 시스템</span><b>개발을 몰라도<br>진행 상황이 보입니다</b><p>끝난 기능과 남은 일을<br>언제든 직접 확인할 수 있습니다.</p><span class="wy-n">04</span></div><div class="wy-c" style="transform:translateX(calc(-50% + 830px)) scale(0.86);--o:0.4;z-index:8"><span class="wy-pl">검수 후 30일 무상 하자 보수</span><b>납품 후에도<br>책임지고 고칩니다</b><p>30일간 하자를 무상으로 수정하고,<br>이후에도 같은 팀이 이어서 맡습니다.</p><span class="wy-n">05</span></div><a href="#" class="wy-ar" style="left:calc(50% - 228px)" aria-label="이전">‹</a><a href="#" class="wy-ar" style="left:calc(50% + 172px)" aria-label="다음">›</a></div>
+<div class="wy-pg"><span style="color:#111318">03</span><span class="wy-bar"><i></i></span><span>06</span></div></section>
+
+<section class="sec" id="how" style="background:#F4F6F9"><div class="w">
+<div style="text-align:center"><div class="eb">HOW WE WORK</div><h2>한 번에 완성할 수도, 꾸준히 함께할 수도 있어요</h2><p class="sub">두 방식을 한눈에 비교해 보세요. 아직 정하지 않았다면, 상담에서 함께 골라 드려요.</p></div>
+<div class="hw-g"><div class="hw-c"><span class="hw-pl">범위 · 기간 · 금액 확정</span><h3>프로젝트형 외주</h3><p class="hw-one">만들 기능과 기간을 먼저 정하고,<br>하나의 서비스를 처음부터 끝까지 완성하는 방식입니다.</p><div class="hw-lb2">이럴 때 추천해요</div><ul class="hw-ul"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg><span>처음 만드는 서비스나 MVP를 만들 때</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg><span>기획부터 디자인, 개발, 테스트까지 한 팀에 맡기고 싶을 때</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg><span>시작 전에 비용과 일정을 분명히 정해두고 싶을 때</span></li></ul><a href="#" data-to="비용 · 개발 방식 상세 페이지" class="btn" style="margin-top:auto;height:52px;background:#0F172A;color:#fff">자세히 보기 →</a></div><div class="hw-c"><span class="hw-pl">지속 개발 · 운영 파트너십</span><h3>구독형 개발팀</h3><p class="hw-one">매달 필요한 기능을 정해 개발하고 운영까지 이어가는,<br>월 단위로 함께하는 전담 개발팀입니다.</p><div class="hw-lb2">이럴 때 추천해요</div><ul class="hw-ul"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg><span>출시 후에도 기능을 계속 추가하고 개선하고 싶을 때</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg><span>운영 중인 서비스에 빠른 대응이 필요할 때</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg><span>운영과 유지보수까지 한 팀에 맡기고 싶을 때</span></li></ul><a href="#" data-to="비용 · 개발 방식 상세 페이지" class="btn" style="margin-top:auto;height:52px;background:#0F172A;color:#fff">자세히 보기 →</a></div></div>
+<div class="hw-nt"><span><b>어떤 방식이 맞을지 모르겠다면</b><span style="color:#5F6673;margin-left:10px">3분 AI 견적과 상담 내용을 바탕으로 적합한 방식을 추천해 드려요.</span></span><a href="#" data-to="무료 상담 신청 페이지" style="font-weight:700;text-decoration:none">무료 상담 신청 →</a></div>
+</div></section>
+
+<section class="sec" id="process"><div class="w">
+<div class="pr-hd"><div><div class="eb">PROCESS</div><h2>상담부터 출시 이후까지, 이렇게 진행됩니다</h2></div><p class="sub" style="font-size:16px;margin:0 0 6px;text-align:right">단계마다 받는 결과물이 정해져 있어,<br>지금 어디까지 왔는지 언제든 알 수 있어요.</p></div>
+<div class="pr"><div class="pr-ln"></div><div class="pr-s"><span class="pr-dot">01</span><div class="pr-k">STEP 01</div><b>무료 상담 · 요구사항 분석</b><p>원하는 서비스와 기능을 함께 정리합니다.</p><div class="pr-ch"><span>요구사항 정리</span></div></div><div class="pr-s"><span class="pr-dot">02</span><div class="pr-k">STEP 02</div><b>견적 제안</b><p>기능별 금액과 기간, 1차 · 2차 개발 범위를 서면으로 제안합니다.</p><div class="pr-ch"><span>기능별 견적서</span><span>개발 범위 제안</span></div></div><div class="pr-s"><span class="pr-dot">03</span><div class="pr-k">STEP 03</div><b>개발 · 테스트</b><p>기획 · 디자인 · 개발 · 테스트를 한 팀이 진행하고, 매주 화면을 공유합니다.</p><div class="pr-ch"><span>매주 작동하는 화면</span></div></div><div class="pr-s"><span class="pr-dot">04</span><div class="pr-k">STEP 04</div><b>검수 · 출시</b><p>완성된 서비스를 함께 검수하고 스토어 · 서버에 출시합니다.</p><div class="pr-ch"><span>30일 무상 하자 보수</span></div></div><div class="pr-s"><span class="pr-dot">05</span><div class="pr-k">STEP 05</div><b>운영 · 추가 개발</b><p>출시 이후 운영, 고도화, 추가 기능 개발을 이어서 지원합니다.</p><div class="pr-ch"><span>구독형 개발팀</span></div></div></div></div></section>
+
+<section class="sec" id="faq" style="background:#F4F6F9"><div class="w fq-wrap">
+<div style="display:flex;flex-direction:column;align-items:flex-start"><div class="eb">FAQ</div><h2>견적 전에<br>많이 묻는 질문</h2>
+<div style="margin-top:auto"><b style="font-size:18px">더 궁금한 점이 있으신가요?</b><p class="g" style="font-size:15px;line-height:1.7;margin-top:10px">찾는 답이 없다면 편하게 물어봐 주세요.<br>담당자가 직접 답변드립니다.</p>
+<div style="display:flex;align-items:center;gap:20px;margin-top:24px"><a href="#" data-to="무료 상담 신청 페이지" class="btn p" style="height:48px;padding:0 24px;font-size:15px">상담 문의</a><a href="#" data-to="FAQ 전체 페이지" class="btn fq-more" style="height:48px;padding:0 24px;font-size:15px;border:1px solid #2563EB;color:#2563EB;background:#fff">더 많은 질문 보기 →</a></div></div></div>
+<div class="fq"><div class="fq-i"><button class="fq-q" aria-expanded="false"><span class="fq-n">01</span><b>AI 견적은 정말 무료인가요?</b><span class="fq-b">+</span></button><div class="fq-a"><p>[답변 내용 — ITF 실제 FAQ 답변으로 채워주세요]</p></div></div><div class="fq-i open"><button class="fq-q" aria-expanded="true"><span class="fq-n">02</span><b>어느 정도 정확한 금액인가요?</b><span class="fq-b">+</span></button><div class="fq-a"><p>AI 견적은 ITF 실제 견적 단가로 계산한 참고 범위입니다. 최종 금액은 요구사항을 확인한 뒤 서면 견적서로 확정됩니다.</p></div></div><div class="fq-i"><button class="fq-q" aria-expanded="false"><span class="fq-n">03</span><b>기획서가 없어도 견적이 가능한가요?</b><span class="fq-b">+</span></button><div class="fq-a"><p>[답변 내용 — ITF 실제 FAQ 답변으로 채워주세요]</p></div></div><div class="fq-i"><button class="fq-q" aria-expanded="false"><span class="fq-n">04</span><b>견적 이후 바로 개발을 진행할 수 있나요?</b><span class="fq-b">+</span></button><div class="fq-a"><p>[답변 내용 — ITF 실제 FAQ 답변으로 채워주세요]</p></div></div><div class="fq-i"><button class="fq-q" aria-expanded="false"><span class="fq-n">05</span><b>개발 기간은 얼마나 걸리나요?</b><span class="fq-b">+</span></button><div class="fq-a"><p>[답변 내용 — ITF 실제 FAQ 답변으로 채워주세요]</p></div></div><div class="fq-i"><button class="fq-q" aria-expanded="false"><span class="fq-n">06</span><b>기존 시스템 연동도 가능한가요?</b><span class="fq-b">+</span></button><div class="fq-a"><p>[답변 내용 — ITF 실제 FAQ 답변으로 채워주세요]</p></div></div></div></div></section>
+
+<section class="sec dark cta" id="cta" style="padding:120px 0;overflow:hidden;background:radial-gradient(800px 520px at 80% 50%,#173A8C 0%,#0B1A3C 65%)">
+<div class="cta-vis" aria-hidden="true" style="position:absolute;right:60px;top:50%;width:560px;height:640px;margin-top:-320px;opacity:.55;transform:scale(.62);transform-origin:center;pointer-events:none"><div style="position:absolute;left:70px;top:310px;width:360px;height:360px;transform:rotateX(60deg) rotateZ(-40deg);border-radius:36px;background:linear-gradient(160deg,rgba(255,255,255,.26),rgba(255,255,255,.08));border:1px solid rgba(255,255,255,.4);box-shadow:0 40px 60px rgba(3,10,30,.45)"><div style="position:absolute;inset:44px 40px"><div style="font-size:26px;font-weight:700;color:#DCE6FF;letter-spacing:3px">PLAN</div><div style="display:flex;align-items:center;gap:18px;margin-top:30px"><span style="width:40px;height:40px;border-radius:11px;background:#2563EB;display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 4px 10px rgba(3,10,30,.4)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5"><path d="M20 6 9 17l-5-5"/></svg></span><span style="height:16px;flex:1;border-radius:8px;background:rgba(255,255,255,.6)"></span></div><div style="display:flex;align-items:center;gap:18px;margin-top:26px"><span style="width:40px;height:40px;border-radius:11px;background:#2563EB;display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 4px 10px rgba(3,10,30,.4)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5"><path d="M20 6 9 17l-5-5"/></svg></span><span style="height:16px;width:70%;border-radius:8px;background:rgba(255,255,255,.48)"></span></div><div style="display:flex;align-items:center;gap:18px;margin-top:26px"><span style="width:40px;height:40px;border-radius:11px;border:3px solid rgba(255,255,255,.6);flex:none"></span><span style="height:16px;width:52%;border-radius:8px;background:rgba(255,255,255,.32)"></span></div></div></div>
+<div style="position:absolute;left:70px;top:170px;width:360px;height:360px;transform:rotateX(60deg) rotateZ(-40deg);border-radius:36px;background:linear-gradient(145deg,#1D4ED8,#14264F);border:1px solid rgba(157,184,255,.4);box-shadow:0 40px 60px rgba(3,10,30,.45)"><div style="position:absolute;inset:34px;font-family:monospace;font-size:22px;line-height:2;color:#9DB8FF;opacity:.9">&lt;App&gt;<br>&nbsp;&nbsp;&lt;Hero /&gt;<br>&nbsp;&nbsp;&lt;Booking /&gt;<br>&lt;/App&gt;</div></div>
+<div style="position:absolute;left:70px;top:30px;width:360px;height:360px;transform:rotateX(60deg) rotateZ(-40deg);border-radius:36px;background:linear-gradient(145deg,#5B8CF5,#2563EB);border:1px solid rgba(255,255,255,.4);box-shadow:0 40px 60px rgba(3,10,30,.45)"><div style="position:absolute;inset:28px;border-radius:22px;background:#fff;padding:22px"><div style="height:16px;width:40%;background:#2563EB;border-radius:6px"></div><div style="height:90px;margin-top:16px;border-radius:14px;background:linear-gradient(135deg,#DCE6FF,#9DB8FF)"></div><div style="display:flex;gap:10px;margin-top:14px"><div style="flex:1;height:60px;border-radius:12px;background:#EAF1FF"></div><div style="flex:1;height:60px;border-radius:12px;background:#EAF1FF"></div></div><div style="height:40px;margin-top:14px;border-radius:999px;background:#2563EB"></div></div></div>
+<div style="position:absolute;left:40px;top:90px;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#fff 0%,#9DB8FF 40%,#2563EB 100%);box-shadow:0 10px 22px rgba(3,10,30,.55)"></div><div style="position:absolute;left:480px;top:520px;width:20px;height:20px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#fff 0%,#9DB8FF 40%,#2563EB 100%);box-shadow:0 10px 22px rgba(3,10,30,.55)"></div><div style="position:absolute;left:20px;top:470px;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#fff 0%,#9DB8FF 40%,#2563EB 100%);box-shadow:0 10px 22px rgba(3,10,30,.55)"></div><div style="position:absolute;left:480px;top:120px;width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#fff 0%,#9DB8FF 40%,#2563EB 100%);box-shadow:0 10px 22px rgba(3,10,30,.55)"></div></div>
+<div class="w" style="position:relative">
+<div style="font-size:15px;color:#9DB8FF;font-weight:700">아이디어만 있어도 시작할 수 있어요</div>
+<h2>지금, 3분이면<br>내 서비스 개발비를 알 수 있어요</h2>
+<p style="font-size:18px;color:#C7D0E0;line-height:1.7;margin-top:20px">AI가 ITF의 실제 견적 단가로 계산해, <br>내 서비스에 맞는 개발비를 정확하게 알려드려요.</p>
+<div style="display:flex;gap:12px;margin-top:40px"><a href="#" data-to="3분 AI 견적 페이지" class="btn p">3분 AI 견적 받기 →</a><a href="#" data-to="무료 상담 신청 페이지" class="btn" style="border:1px solid #3A4E7A;color:#fff">무료 상담</a></div></div></section>
+
+<footer style="padding:48px 0;background:#F4F6F9"><div class="w ft"><span><b style="color:#2563EB">ITF</b> · 회사 소개 · 로그인 · 이용약관 · 개인정보처리방침</span><span>contact@itf-corp.co.kr</span></div></footer>
+</div>
+
+<div class="toast" role="status" aria-live="polite"></div>
+<a href="#" class="m-cta" data-to="3분 AI 견적 페이지">3분 AI 견적 받기 →</a>
+<script>// toast: buttons only show where they lead
+const toast=document.querySelector('.toast');let tt;
+document.addEventListener('click',e=>{const a=e.target.closest('[data-to]');if(!a)return;e.preventDefault();
+  toast.textContent='→ '+a.dataset.to+'로 이동합니다';toast.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove('show'),1800);});
+document.querySelectorAll('.gnb-nav a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('menu-open')));
+// hero visual scale
+const hv=document.querySelector('.hv'),hw=document.querySelector('.hv-wrap');
+function fitHero(){const w=hw.clientWidth,s=Math.min(1,w/1200);hv.style.transform=`scale(${s})`;hw.style.height=300*s+'px';
+  hv.style.marginLeft=w>1200?((w-1200)/2)+'px':'0';}
+addEventListener('resize',fitHero);fitHero();
+// why carousel
+const C=[["3분 AI 견적","상담 전에 예산을<br>먼저 가늠합니다","몇 가지 질문에 답하면 예상 개발비를<br>바로 확인할 수 있습니다."],
+["비용 사전 합의","동의 없이 비용이<br>늘어나지 않습니다","범위나 비용이 바뀌면 먼저 설명하고,<br>합의한 뒤에만 진행합니다."],
+["매주 작동하는 화면 공유","말이 아닌 결과물로<br>진행을 확인합니다","매주 실제로 작동하는 화면을<br>직접 눌러 보며 확인할 수 있습니다."],
+["프로젝트 관리 시스템","개발을 몰라도<br>진행 상황이 보입니다","끝난 기능과 남은 일을<br>언제든 직접 확인할 수 있습니다."],
+["검수 후 30일 무상 하자 보수","납품 후에도<br>책임지고 고칩니다","30일간 하자를 무상으로 수정하고,<br>이후에도 같은 팀이 이어서 맡습니다."],
+["소스코드 · 인프라 고객 소유","업체를 바꿔도<br>내 서비스는 그대로입니다","저장소, 서버, 문서까지 고객이<br>직접 관리할 수 있도록 전달합니다."]];
+const st=document.querySelector('.wy-st');
+st.querySelectorAll('.wy-c').forEach(n=>n.remove());
+const cards=C.map((c,i)=>{const d=document.createElement('div');d.className='wy-c';
+  d.innerHTML=`<span class="wy-pl">${c[0]}</span><b>${c[1]}</b><p>${c[2]}</p><span class="wy-n">0${i+1}</span>`;st.prepend(d);return d;});
+const ar=st.querySelectorAll('.wy-ar'),pg=document.querySelector('.wy-pg'),bar=pg.querySelector('i'),nums=pg.querySelectorAll('span');
+nums[0].removeAttribute('style');pg.firstElementChild.style.color='#111318';
+let cur=2;
+function render(){const mob=innerWidth<=768,gap=mob?(cards[0].offsetWidth+14):430;
+  cards.forEach((d,i)=>{const k=i-cur,a=Math.abs(k);const sc=mob?1:[1,.92,.86][Math.min(a,2)],o=a===0?1:mob?.5:[1,.6,.4][Math.min(a,2)];
+    d.style.transform=`translateX(calc(-50% + ${k*gap}px)) scale(${sc})`;d.style.setProperty('--o',a>2?0:o);d.style.zIndex=10-a;
+    d.style.visibility=a>2?'hidden':'visible';d.classList.toggle('wy-on',a===0);});
+  pg.firstElementChild.textContent=String(cur+1).padStart(2,'0');bar.style.left=(cur/(C.length-1))*(200-34)+'px';}
+const go=n=>{cur=(n+C.length)%C.length;render();};
+ar[0].addEventListener('click',e=>{e.preventDefault();go(cur-1);});ar[1].addEventListener('click',e=>{e.preventDefault();go(cur+1);});
+cards.forEach((d,i)=>d.addEventListener('click',()=>go(i)));
+let sx=null;st.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+st.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(cur+(dx<0?1:-1));sx=null;});
+addEventListener('resize',render);render();
+// faq
+document.querySelectorAll('.fq-q').forEach(b=>b.addEventListener('click',()=>{const it=b.parentElement,open=!it.classList.contains('open');
+  it.classList.toggle('open',open);b.setAttribute('aria-expanded',open);}));
+// mobile cta hides at final CTA
+const mc=document.querySelector('.m-cta'),ctaSec=document.getElementById('cta');
+const vis=new Set();const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));mc.classList.toggle('hide',vis.size>0);},{threshold:.15});
+io.observe(ctaSec);io.observe(document.querySelector('.h1').closest('section'));
+</script></body></html>
