@@ -66,14 +66,14 @@ body{margin:0}
 .itf .hw-ft{width:100%;display:flex;justify-content:space-between;align-items:flex-end;margin-top:auto;padding-top:36px}
 .itf .hw-lb{display:block;font-size:13px;color:#8B919C}.itf .hw-pr{display:block;font-size:26px;font-weight:900;color:#2563EB;margin-top:4px;letter-spacing:-.5px}.itf .hw-pr small{font-size:15px;color:#5F6673;font-weight:500}
 .itf .hw-nt{margin-top:20px;background:#fff;border-radius:20px;padding:24px 32px;display:flex;justify-content:space-between;align-items:center;font-size:15px}
-.itf .pr{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;margin-top:64px}
-.itf .pr-ln{position:absolute;left:20px;right:0;top:19px;height:2px;background:linear-gradient(90deg,#2563EB,#9DB8FF)}
-.itf .pr-s{position:relative}
-.itf .pr-dot{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#2563EB;color:#fff;font-size:13px;font-weight:700;box-shadow:0 0 0 6px #fff,0 0 0 7px #DCE6FF}
-.itf .pr-k{font-size:12px;font-weight:700;color:#8B919C;letter-spacing:1px;margin-top:28px}
+.itf .pr{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;margin-top:72px}
+.itf .pr-ln{position:absolute;left:20px;right:0;top:19px;height:2px;background:#2563EB}
+.itf .pr-s{position:relative;display:flex;flex-direction:column}
+.itf .pr-dot{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#2563EB;color:#fff;font-size:13px;font-weight:700;}
+.itf .pr-k{font-size:12px;font-weight:700;color:#8B919C;letter-spacing:1px;margin-top:34px}
 .itf .pr-s b{display:block;font-size:20px;font-weight:900;letter-spacing:-.5px;margin-top:6px}
-.itf .pr-s p{word-break:keep-all;font-size:15px;color:#5F6673;line-height:1.7;margin-top:12px}
-.itf .pr-ch{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
+.itf .pr-s p{word-break:keep-all;max-width:205px;font-size:15px;color:#5F6673;line-height:1.7;margin-top:12px}
+.itf .pr-ch{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:28px}
 .itf .pr-ch span{font-size:12px;font-weight:500;color:#111318;background:#F4F6F9;border:1px solid #E6E9EE;padding:5px 10px;border-radius:6px}
 .itf .fq{border-top:1px solid #E6E9EE}
 .itf .fq-i{border-bottom:1px solid #E6E9EE;padding:26px 4px}
@@ -132,7 +132,8 @@ body{background:#fff;-webkit-font-smoothing:antialiased;word-break:keep-all}
 .hw-g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:56px}
 .itf .hw-c{transition:transform .3s,box-shadow .3s}.itf .hw-c:hover{transform:translateY(-4px);box-shadow:0 0 0 2px #2563EB,0 18px 40px rgba(15,23,42,.08)}
 /* process */
-.pr-hd{display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
+.pr-hd{display:flex;flex-direction:column;align-items:flex-start;gap:0}
+.pr-hd .sub{margin-top:14px}
 .itf .pr-s:hover .pr-dot{background:#1D4ED8;transform:scale(1.1)}.itf .pr-dot{transition:transform .25s,background .25s}
 /* faq */
 .fq-wrap{display:grid;grid-template-columns:380px minmax(0,1fr);gap:40px}
@@ -231,7 +232,7 @@ body{background:#fff;-webkit-font-smoothing:antialiased;word-break:keep-all}
 
 <div class="dark" style="position:relative;overflow:hidden;background:radial-gradient(1000px 600px at 50% 85%,#173A8C 0%,#0B1A3C 62%)">
 <header id="top" class="gnb" style="position:relative;z-index:2;height:76px;border-bottom:1px solid rgba(157,184,255,.14)"><div class="w" style="height:100%;display:flex;align-items:center;justify-content:space-between">
-<a href="#top" class="logo" aria-label="ITF 홈">ITF</a>
+<a href="#top" class="logo" aria-label="ITF 홈"><img src="data:image/png;base64,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" alt="ITF" style="height:28px;width:auto;display:block"></a>
 <nav class="gnb-nav"><a href="#service">서비스</a><a href="#how">비용</a><a href="#process">진행 방식</a><a href="#portfolio">포트폴리오</a><a href="#faq">FAQ</a></nav>
 <button class="burger" aria-label="메뉴 열기" onclick="document.body.classList.toggle('menu-open')"><i></i><i></i><i></i></button><div class="gnb-btns" style="display:flex;gap:10px"><a href="#" data-to="무료 상담 신청 페이지" class="btn" style="height:42px;font-size:14px;padding:0 18px;border:1px solid #3A4E7A;color:#fff">무료 상담</a><a href="#" data-to="3분 AI 견적 페이지" class="btn p" style="height:42px;font-size:14px;padding:0 18px">3분 AI 견적</a></div></div></header>
 
@@ -285,7 +286,7 @@ body{background:#fff;-webkit-font-smoothing:antialiased;word-break:keep-all}
 </div></section>
 
 <section class="sec" id="process"><div class="w">
-<div class="pr-hd"><div><div class="eb">PROCESS</div><h2>상담부터 출시 이후까지, 이렇게 진행됩니다</h2></div><p class="sub" style="font-size:16px;margin:0 0 6px;text-align:right">단계마다 받는 결과물이 정해져 있어,<br>지금 어디까지 왔는지 언제든 알 수 있어요.</p></div>
+<div class="pr-hd"><div><div class="eb">PROCESS</div><h2>상담부터 출시 이후까지, 이렇게 진행됩니다</h2></div><p class="sub" style="font-size:16px">단계마다 받는 결과물이 정해져 있어, 지금 어디까지 왔는지 언제든 알 수 있어요.</p></div>
 <div class="pr"><div class="pr-ln"></div><div class="pr-s"><span class="pr-dot">01</span><div class="pr-k">STEP 01</div><b>무료 상담 · 요구사항 분석</b><p>원하는 서비스와 기능을 함께 정리합니다.</p><div class="pr-ch"><span>요구사항 정리</span></div></div><div class="pr-s"><span class="pr-dot">02</span><div class="pr-k">STEP 02</div><b>견적 제안</b><p>기능별 금액과 기간, 1차 · 2차 개발 범위를 서면으로 제안합니다.</p><div class="pr-ch"><span>기능별 견적서</span><span>개발 범위 제안</span></div></div><div class="pr-s"><span class="pr-dot">03</span><div class="pr-k">STEP 03</div><b>개발 · 테스트</b><p>기획 · 디자인 · 개발 · 테스트를 한 팀이 진행하고, 매주 화면을 공유합니다.</p><div class="pr-ch"><span>매주 작동하는 화면</span></div></div><div class="pr-s"><span class="pr-dot">04</span><div class="pr-k">STEP 04</div><b>검수 · 출시</b><p>완성된 서비스를 함께 검수하고 스토어 · 서버에 출시합니다.</p><div class="pr-ch"><span>30일 무상 하자 보수</span></div></div><div class="pr-s"><span class="pr-dot">05</span><div class="pr-k">STEP 05</div><b>운영 · 추가 개발</b><p>출시 이후 운영, 고도화, 추가 기능 개발을 이어서 지원합니다.</p><div class="pr-ch"><span>구독형 개발팀</span></div></div></div></div></section>
 
 <section class="sec" id="faq" style="background:#F4F6F9"><div class="w fq-wrap">
